@@ -51,3 +51,7 @@ def Union(listx, listy): #WORKS
     unionlist = listx + listy
     return unionlist
 
+def Intersection(listx, listy): #WORKS
+    intersectlist = []
+    intersectlist = list(set(listx) & set(listy))
+    return intersectlist
