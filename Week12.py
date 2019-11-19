@@ -32,3 +32,16 @@ def FindWordCount(userlist, userstring): #NEED TO CHECK
         if userstring == userlist[i]:
             numoccurences += 1
     return numoccurences
+
+def ScoreFinder(playernames, playerscores, foundplayer): #WORKS
+    foundplayer = foundplayer.lower()
+    location = -1
+    for j in range(len(playernames)):
+        playernames[i] = playernames[i].lower()
+    for i in range(len(playernames)):
+        if foundplayer == playernames[i]:
+            location = i
+    if location >= 0:
+        print('OUTPUT', playernames[location], 'got a score of', playerscores[location])
+    else:
+        print('OUTPUT player not found')
