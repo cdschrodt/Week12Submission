@@ -55,3 +55,9 @@ def Intersection(listx, listy): #WORKS
     intersectlist = []
     intersectlist = list(set(listx) & set(listy))
     return intersectlist
+
+
+def NotIn(listx, listy): #WORKS
+    excludedlist = []
+    excludedlist = list(set(listx) - set(listy))
+    return excludedlist
