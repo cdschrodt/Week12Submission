@@ -25,3 +25,10 @@ def UpdateString(stringx, stringy, indexint): #WORKS
         else:
             modstring += stringx[i]
     print('OUTPUT', modstring)
+
+def FindWordCount(userlist, userstring): #NEED TO CHECK
+    numoccurences = 0
+    for i in range(len(userlist)):
+        if userstring == userlist[i]:
+            numoccurences += 1
+    return numoccurences
