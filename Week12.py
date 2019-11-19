@@ -45,3 +45,9 @@ def ScoreFinder(playernames, playerscores, foundplayer): #WORKS
         print('OUTPUT', playernames[location], 'got a score of', playerscores[location])
     else:
         print('OUTPUT player not found')
+
+def Union(listx, listy): #WORKS
+    unionlist = []
+    unionlist = listx + listy
+    return unionlist
+
