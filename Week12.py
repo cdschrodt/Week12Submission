@@ -16,3 +16,12 @@ def LoadFile(file): #WORKS
         for j in newlist:
             datalist.append(j)
     return datalist
+
+def UpdateString(stringx, stringy, indexint): #WORKS
+    modstring = ''
+    for i in range(len(stringx)):
+        if i == indexint:
+            modstring += stringy
+        else:
+            modstring += stringx[i]
+    print('OUTPUT', modstring)
